@@ -15,7 +15,7 @@ print(f"Thank you for providing your date of birth, {name }")
 
 # save file in txt file
 
-with open("../data/info.txt", "w") as file:
+with open("data/info.txt", "w") as file:
     file.write(f"Name: {name}\n")
     file.write(f"Email: {email}\n")
     file.write(f"Phone Number: {phone_number}\n")
