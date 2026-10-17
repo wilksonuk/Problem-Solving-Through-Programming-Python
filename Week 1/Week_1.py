@@ -12,21 +12,11 @@ print(f"Thank you for providing your phone number, {name }")
 Dob= input("Enter your date of birth (DD/MM/YYYY): ")
 print(f"Thank you for providing your date of birth, {name }")
 
-# Define the project folder
-project_folder = Path(__file__).parent.parent
 
-# Create the data folder if it does not exist
-data_folder = project_folder / "data"
-data_folder.mkdir(parents=True, exist_ok=True)
+# save file in txt file
 
-# Define the file path
-file_path = data_folder / "info.txt"
-
-# Save the information
-with open(file_path, "w", encoding="utf-8") as file:
+with open("../data/info.txt", "w") as file:
     file.write(f"Name: {name}\n")
     file.write(f"Email: {email}\n")
     file.write(f"Phone Number: {phone_number}\n")
-    file.write(f"Date of Birth: {dob}\n")
-
-print(f"\nInformation saved successfully in: {file_path}")
+    file.write(f"Date of Birth: {Dob}\n")
