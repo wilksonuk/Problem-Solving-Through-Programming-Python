@@ -14,3 +14,5 @@ elif second_number < first_number:
 else:
     print("Both are equal!")
 
+print("Finished checking the numbers.")
+
