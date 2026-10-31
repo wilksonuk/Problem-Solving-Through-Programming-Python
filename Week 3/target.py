@@ -8,5 +8,4 @@ num_steps = int(input())
 # Finally, the program should use a for loop to display the number of steps remaining.
 
 for _ in range(num_steps):
-    print("Step remaining...")
-    
+    print(f" {num_steps - _} steps remaining...")
